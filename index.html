@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTMINNA | Engineering Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-card animate-pop-in">
+        <header>
+            <div class="logo">FUTMINNA</div>
+            <h1>Student Registry</h1>
+            <p class="subtitle">100 Level Electrical Engineering Portal</p>
+        </header>
+
+        <section class="registry-form">
+            <div class="input-wrapper">
+                <input type="text" id="name" placeholder="Full Name (Surname First)" required>
+                <input type="text" id="interest" placeholder="Academic Interest (e.g. Complex Numbers)" required>
+                <button id="submitBtn" class="btn-main">Register Profile</button>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="feed-section">
+            <div class="section-header">
+                <h3>Community Updates</h3>
+                <span id="refresh-status" class="status-dot"></span>
+            </div>
+            
+            <div id="comments-list" class="scroll-area">
+                </div>
+            
+            <div class="post-box">
+                <h4>Leave a Review or Note</h4>
+                <input type="text" id="rev-name" placeholder="Your Name">
+                <textarea id="rev-content" rows="2" placeholder="Share a study tip or update..."></textarea>
+                <button id="postRevBtn" class="btn-sub">Post to Feed</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
